@@ -70,6 +70,8 @@
                 </Directory>
                 <Directory Id="_usr_lib" Name="lib">
                   <Directory Id="_usr_lib_clang" Name="clang">
+                    <Directory Id="_usr_lib_clang_$(var.CLANG_VERSION)" Name="$(var.CLANG_VERSION)">
+                    </Directory>
                   </Directory>
                   <Directory Id="_usr_lib_site_packages" Name="site-packages">
                     <Directory Id="_usr_lib_site_packages_lldb" Name="lldb">
@@ -82,7 +84,7 @@
                     </Directory>
                   </Directory>
                   <Directory Id="_usr_lib_swift" Name="swift">
-                    <Directory Id="_usr_lib_swift_clang" Name="clang">
+                    <Directory Id="_usr_lib_clang_$(var.CLANG_VERSION)" Name="clang">
                     </Directory>
                     <Directory Id="_usr_lib_swift_migrator" Name="migrator">
                     </Directory>
